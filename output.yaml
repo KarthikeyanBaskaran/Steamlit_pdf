@@ -1,0 +1,84 @@
+summary: Results-driven procurement professional with expertise in data-driven procurement,
+  strategic sourcing, and supply chain management, leveraging analytical skills to
+  drive cost savings and process improvements.
+skills:
+- name: Data Analysis Tools
+  keywords:
+  - Python
+  - Power BI
+  - Tableau
+- name: Procurement Software
+  keywords:
+  - SAP
+  - ERP
+  - Microsoft Power Query
+- name: Cloud Platforms
+  keywords:
+  - Azure
+  - Google Cloud
+  - Streamlit
+- name: Machine Learning
+  keywords:
+  - Predictive Modeling
+  - Monte Carlo Simulations
+  - Natural Language Processing
+- name: Supply Chain Management
+  keywords:
+  - Inventory Management
+  - Logistics
+  - Vendor Management
+- name: Business Intelligence
+  keywords:
+  - Data Visualization
+  - Data Mining
+  - Financial Analysis
+work_experience:
+- title: Procurement Engineer
+  company: Vestas Wind Technology, India
+  dates: Nov 2021 - Aug 2023
+  achievements:
+  - Achieved a 15% reduction in procurement costs by developing a data-driven supplier
+    evaluation and conducting detailed cost analysis.
+  - Accelerated project timelines by 20% by implementing predictive analytics for
+    demand forecasting, enhancing project delivery capacity.
+  - Delivered savings of $35M by developing and deploying Python-based automation
+    tools that streamlined procurement workflows and enhanced operational efficiency.
+- title: Consultant ECM Purchaser
+  company: Vestas, ManpowerGroup Services, India
+  dates: Jan 2021 - Nov 2021
+  achievements:
+  - Reduced production costs by 10% through process optimization analyses, utilizing
+    data-driven insights to streamline operations.
+  - Identified potential savings of 3M EUR by analyzing supplier costs and payment
+    credit periods, implementing standardized and efficient procurement strategies.
+  - Improved operational efficiency by 15% by leading cross-functional collaboration
+    and deploying Lean methodologies.
+- title: Procurement Engineer
+  company: Valeo India, India
+  dates: Jun 2018 - Jan 2021
+  achievements:
+  - Managed RFx processes across castings, sheet metal, and plastic segments, achieving
+    10-15% cost reductions through competitive vendor sourcing and procurement strategies.
+  - Built and maintained a robust supplier base by inducting vendors, implementing
+    double sourcing, and driving localization, resulting in a 20% improvement in supply
+    chain efficiency.
+  - Executed supplier auctions using digital platforms, reducing overall part costs
+    by 8-12% while ensuring competitive pricing through negotiations.
+projects:
+- project_name: Procurement Analytics
+  description: Created a Power BI dashboard to track procurement KPIs, supplier performance,
+    and category spend, providing actionable insights for informed decision-making.
+  keywords:
+  - Power BI
+  - Procurement
+  - Analytics
+  - KPIs
+- project_name: Supply Chain Intelligence
+  description: Optimized food delivery logistics and rider efficiency by applying
+    ML forecasting, operational analytics, and real-time dashboards to drive data-backed
+    performance improvements.
+  keywords:
+  - Supply Chain Analytics
+  - Python
+  - Machine Learning
+  - Tableau

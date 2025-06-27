@@ -1,0 +1,133 @@
+{%- macro format_str_date(str_date) -%}
+{{ strptime(str_date, '%Y-%m-%d').strftime('%b %Y') }}
+{%- endmacro -%}
+
+{%- macro format_date_range(exp) -%}
+{{ format_str_date(exp.startDate) }} - {% if exp.endDate %}{{ format_str_date(exp.endDate) }}{% else %}Present{% endif %}
+{%- endmacro -%}
+
+<head>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header-name">
+            <span class="name-large">Karth</span>
+            <span class="name-small">(Karthikeyan Baskaran)</span>
+        </div>
+        <ul class="header">
+            <li><a>+1 437-665-6654</a></li>
+            <li><a href="mailto:karthikeyanbaskarca@gmail.com">karthikeyanbaskarca@gmail.com</a></li>
+            
+            <li>
+                <a href="https://github.com/KarthikeyanBaskaran">https://github.com/KarthikeyanBaskaran</a>
+            </li>
+            
+            <li>
+                <a href="https://www.linkedin.com/in/karthikeyan-baskaran">https://www.linkedin.com/in/karthikeyan-baskaran</a>
+            </li>
+            
+        </ul>
+    </div>
+
+<h2>Summary</h2>
+<div class="summary">
+    {{ summary }}
+</div>
+
+
+<h2>Skills</h2>
+<ul class="keyval-list">
+    {% for skill in skills %}
+    <li><span class="key-title">{{ skill.name }}</span>: {{ skill.keywords|join(', ') }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Work Experience</h2>
+<ul class="work-list">
+    
+    <li>
+        <div class="work-subheader">
+            <div class="work-title">Procurement Specialist</div>
+            <div class="work-date">Nov 2021 - Aug 2023</div>
+        </div>
+        
+        <div class="work-company">Vestas Wind Technology, India</div> 
+        
+        <ul class="work-description">
+            {% for highlight in work_experience[0].achievements %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    
+    <li>
+        <div class="work-subheader">
+            <div class="work-title">Consultant ECM Purchaser, Vestas</div>
+            <div class="work-date">Jan 2021 - Nov 2021</div>
+        </div>
+        
+        <div class="work-company">ManpowerGroup Services, India</div> 
+        
+        <ul class="work-description">
+            {% for highlight in work_experience[1].achievements %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    
+    <li>
+        <div class="work-subheader">
+            <div class="work-title">Procurement Engineer (Intern)</div>
+            <div class="work-date">Jun 2019 - Jan 2021</div>
+        </div>
+        
+        <div class="work-company">Valeo India</div> 
+        
+        <ul class="work-description">
+            {% for highlight in work_experience[2].achievements %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+    </li>
+    
+</ul>
+
+
+<h2>Projects</h2>
+<ul class="keyval-list-project">
+    {% for project in projects %}
+    <li><span class="key-title">{{ project.project_name }}</span>: {{ project.description }}
+        {% if project.url %} (<a href="{{ project.url }}">{{ project.url }}</a>){% endif %}
+        {% if project.keywords|length > 0 %} ({{ project.keywords|join(', ') }}){% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Education</h2>
+<ul class="work-list">
+    
+    <li><div class="work-subheader">
+        <div class="work-title">Diploma in Data Analytics for Business</div>
+        <div class="work-date">4.0 GPA</div>
+        </div>
+        <div class="work-subheader">
+            <div class="work-company">St. Clair College, Canada</div>
+            <div class="work-date">Sep 2023 - Apr 2025</div>
+        </div>
+    </li>
+    
+    <li>
+        <div class="work-subheader">
+            <div class="work-title">Bachelor of Mechanical Engineering</div>
+            <div class="work-date">3.7 GPA</div>
+        </div>
+        <div class="work-subheader">
+            <div class="work-company">St. Joseph's Institute of Technology, India</div>
+            <div class="work-date">Jun 2014 - Jun 2018</div>
+        </div>
+    </li>
+    
+</ul>
+</body>

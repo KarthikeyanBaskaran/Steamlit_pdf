@@ -1,0 +1,7 @@
+python-dotenv
+groq
+PyYAML
+weasyprint
+Jinja2
+streamlit
+requests
